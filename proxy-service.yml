@@ -1,5 +1,5 @@
 server:
-  port: 8062
+  port: 8060
 
 eureka:
   client:
@@ -12,6 +12,6 @@ logging:
               
 zuul:
   routes:
-    department:
+    course:
       path: /course/**
       serviceId: course-service
