@@ -15,3 +15,6 @@ zuul:
     course:
       path: /course/**
       serviceId: course-service
+    auth:
+      path: /auth/**
+      serviceId: auth-service
