@@ -17,5 +17,5 @@ zuul:
       serviceId: course-service
     auth:
       path: /auth/**
-	  sensitiveHeaders: Cookie,Set-Cookie,Authorization
+      sensitive-headers: Authorization
       serviceId: auth-service
