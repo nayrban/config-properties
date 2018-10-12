@@ -16,6 +16,7 @@ zuul:
   routes:
     course:
       path: /course/**
+      sensitiveHeaders: Cookie,Set-Cookie	  
       serviceId: course-service
     auth:
       sensitiveHeaders: Cookie,Set-Cookie
