@@ -11,11 +11,13 @@ logging:
     console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
               
 zuul:
+  add-host-header: true
+  ignore-security-headers: true
   routes:
     course:
       path: /course/**
       serviceId: course-service
     auth:
+      sensitiveHeaders: Cookie,Set-Cookie
       path: /auth/**
-      sensitive-headers: Authorization
       serviceId: auth-service
